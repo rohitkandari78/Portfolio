@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohit Singh Kandari — Computer Science Student, C# & .NET Developer and Aspiring Software Engineer portfolio." />
+  <meta name="author" content="Rohit Singh Kandari" />
+  <title>Rohit Singh Kandari | Software Developer & CS Student</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Ambient Background Glow Mesh -->
+  <div class="glow-mesh glow-top"></div>
+  <div class="glow-mesh glow-bottom"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Rohit</span>
+        <span class="brand-dot">.</span>
+        <span class="brand-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Talk</a>
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn" aria-label="Open Navigation Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="brand-name">Rohit<span class="brand-dot">.</span>dev</span>
+      <button id="drawer-close" class="icon-btn" aria-label="Close Navigation Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#skills" class="drawer-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+      <li><a href="#projects" class="drawer-link"><i class="fa-solid fa-code"></i> Projects</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div class="status-badge drawer-status">
+        <span class="status-dot"></span>
+        <span>Open to Opportunities</span>
+      </div>
+    </div>
+  </aside>
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <!-- Main Container -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Live Status Pill -->
+        <div class="status-pill animate-fade-in">
+          <span class="status-ping"></span>
+          <span class="status-dot"></span>
+          <span>Available for Internships & Full-time Roles</span>
+        </div>
+
+        <!-- Avatar with Dynamic Glowing Ring -->
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-frame">
+            <img src="1761205280895.webp" alt="Rohit Singh Kandari" class="avatar-img" />
+          </div>
+        </div>
+
+        <!-- Hero Headlines -->
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-gradient">Rohit Singh Kandari</span>
+        </h1>
+
+        <div class="hero-subtitle-container">
+          <span class="hero-prefix">I build </span>
+          <span class="typewriter-text" id="typewriter"></span>
+          <span class="typewriter-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Computer Science student & passionate developer crafting reliable desktop solutions with
+          <strong>C# & .NET</strong>, intuitive web interfaces, and clean architectures.
+        </p>
+
+        <!-- CTA Action Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get in Touch</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </a>
+          <a href="Document%2011.docx" download="Rohit_Singh_Kandari_CV.docx" class="btn btn-ghost" title="Download Resume / CV">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+
+        <!-- Metric / Highlight Badges -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Core Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">C# / .NET</span>
+            <span class="stat-label">Primary Stack</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Code Dedication</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// 01. ABOUT ME</span>
+          <h2 class="section-title">Driven by Logic, Fueled by Code</h2>
+          <p class="section-subtitle">Bridging classroom theory with scalable real-world applications</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Info Column -->
+          <div class="about-text-card glass-card">
+            <h3>Hello World! 👋</h3>
+            <p>
+              I'm Rohit, a Computer Science student with an innate curiosity for how software operates under the hood. 
+              My programming journey is centered around <strong>C# and the .NET ecosystem</strong>, where I love building 
+              structured, robust, and clean applications that solve tangible problems.
+            </p>
+            <p>
+              Beyond coursework, I invest my time exploring modern web technologies, database design with 
+              <strong>MySQL and PostgreSQL</strong>, and writing clean, maintainable code. Continuous learning is my standard.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-terminal text-accent"></i>
+                <div>
+                  <strong>Problem Solver</strong>
+                  <p>Translating complex workflows into efficient code.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-cubes text-accent"></i>
+                <div>
+                  <strong>C# & .NET Focus</strong>
+                  <p>Desktop architectures, API integrations, and OOP principles.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-handshake-angle text-accent"></i>
+                <div>
+                  <strong>Collaborative Learner</strong>
+                  <p>Always enthusiastic about team development and open source.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Code Terminal Card -->
+          <div class="code-terminal glass-card">
+            <div class="terminal-bar">
+              <div class="terminal-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">RohitDeveloper.cs</span>
+              <span class="terminal-lang">C#</span>
+            </div>
+            <pre class="terminal-body"><code><span class="c-keyword">using</span> System;
+<span class="c-keyword">using</span> System.Collections.Generic;
+
+<span class="c-keyword">namespace</span> <span class="c-type">Portfolio</span>
+{
+    <span class="c-keyword">public class</span> <span class="c-type">RohitSinghKandari</span>
+    {
+        <span class="c-keyword">public string</span> Role =&gt; <span class="c-string">"Software Developer & CS Student"</span>;
+        <span class="c-keyword">public string</span> Location =&gt; <span class="c-string">"India 🇮🇳"</span>;
+        
+        <span class="c-keyword">public string</span>[] CoreFocus =&gt; <span class="c-keyword">new</span>[] 
+        { 
+            <span class="c-string">"C#"</span>, <span class="c-string">".NET Framework / Core"</span>, 
+            <span class="c-string">"Desktop Applications"</span>, <span class="c-string">"Web Tech"</span> 
+        };
+
+        <span class="c-keyword">public bool</span> OpenToOpportunities =&gt; <span class="c-bool">true</span>;
+
+        <span class="c-keyword">public void</span> <span class="c-func">GetInTouch</span>()
+        {
+            Console.<span class="c-func">WriteLine</span>(<span class="c-string">"Let's build something extraordinary together!"</span>);
+        }
+    }
+}</code></pre>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// 02. TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">The tools and languages I leverage to bring ideas to life</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Programming Languages -->
+          <div class="skill-category glass-card spotlight-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge" data-skill="csharp">
+                <i class="fa-solid fa-hashtag text-csharp"></i>
+                <span>C#</span>
+              </div>
+              <div class="skill-badge" data-skill="python">
+                <i class="fa-brands fa-python text-python"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-badge" data-skill="java">
+                <i class="fa-brands fa-java text-java"></i>
+                <span>Java</span>
+              </div>
+              <div class="skill-badge" data-skill="js">
+                <i class="fa-brands fa-js text-js"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-badge" data-skill="php">
+                <i class="fa-brands fa-php text-php"></i>
+                <span>PHP</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development -->
+          <div class="skill-category glass-card spotlight-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-globe"></i></div>
+              <h3>Web Development</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge" data-skill="html">
+                <i class="fa-brands fa-html5 text-html"></i>
+                <span>HTML5</span>
+              </div>
+              <div class="skill-badge" data-skill="css">
+                <i class="fa-brands fa-css3-alt text-css"></i>
+                <span>CSS3</span>
+              </div>
+              <div class="skill-badge" data-skill="dotnet">
+                <i class="fa-solid fa-cubes text-dotnet"></i>
+                <span>.NET</span>
+              </div>
+              <div class="skill-badge" data-skill="responsive">
+                <i class="fa-solid fa-mobile-screen text-responsive"></i>
+                <span>Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="skill-category glass-card spotlight-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Databases & Storage</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge" data-skill="mysql">
+                <i class="fa-solid fa-server text-mysql"></i>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-badge" data-skill="postgres">
+                <i class="fa-solid fa-database text-postgres"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-badge" data-skill="sql">
+                <i class="fa-solid fa-table text-sql"></i>
+                <span>Relational Schema</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Workflow -->
+          <div class="skill-category glass-card spotlight-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Tools & Environment</h3>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-badge" data-skill="git">
+                <i class="fa-brands fa-git-alt text-git"></i>
+                <span>Git</span>
+              </div>
+              <div class="skill-badge" data-skill="github">
+                <i class="fa-brands fa-github text-github"></i>
+                <span>GitHub</span>
+              </div>
+              <div class="skill-badge" data-skill="vscode">
+                <i class="fa-solid fa-file-code text-vscode"></i>
+                <span>VS Code</span>
+              </div>
+              <div class="skill-badge" data-skill="visualstudio">
+                <i class="fa-solid fa-laptop-code text-vs"></i>
+                <span>Visual Studio</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// 03. FEATURED WORK</span>
+          <h2 class="section-title">Projects & Creations</h2>
+          <p class="section-subtitle">Real-world applications built with precision, performance, and usability</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: TaskMate -->
+          <div class="project-card glass-card spotlight-card">
+            <div class="project-top">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <span class="project-badge">.NET Application</span>
+            </div>
+            <h3 class="project-title">TaskMate (.NET)</h3>
+            <p class="project-desc">
+              A responsive, high-performance desktop task manager built using C# and .NET. 
+              Features fast task creation, status filtering, category tracking, and reliable local persistence.
+            </p>
+            <div class="project-stack">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Desktop App</span>
+              <span>Local Storage</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohitkandari78" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2: WeatherNow -->
+          <div class="project-card glass-card spotlight-card">
+            <div class="project-top">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <span class="project-badge">API & Desktop</span>
+            </div>
+            <h3 class="project-title">WeatherNow (.NET)</h3>
+            <p class="project-desc">
+              A real-time atmospheric forecasting desktop utility. Seamlessly connects to OpenWeatherMap API 
+              with asynchronous HTTP requests, displaying live temperature, humidity, and weather conditions.
+            </p>
+            <div class="project-stack">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>REST API</span>
+              <span>JSON Parsing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rohitkandari78" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                <i class="fa-brands fa-github"></i>
+                <span>Source Code</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: SalesForce Clone -->
+          <div class="project-card glass-card spotlight-card">
+            <div class="project-top">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <span class="project-badge">Web Application</span>
+            </div>
+            <h3 class="project-title">SalesForce UI Clone</h3>
+            <p class="project-desc">
+              A pixel-accurate frontend replica of the enterprise SalesForce dashboard UI. 
+              Demonstrates advanced CSS layout architecture, responsive grids, and modern UI component design.
+            </p>
+            <div class="project-stack">
+              <span>HTML5</span>
+              <span>Modern CSS</span>
+              <span>Flexbox / Grid</span>
+              <span>Netlify</span>
+            </div>
+            <div class="project-links">
+              <a href="https://incomparable-narwhal-c019bb.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Live Preview</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & VISITOR TRACKER SECTION -->
+    <section id="contact" class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">// 04. GET IN TOUCH</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Whether you have an internship opportunity, project idea, or just want to chat tech!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          
+          <!-- Contact Channels -->
+          <div class="contact-info-cards">
+            
+            <a href="https://wa.me/918630207586" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+              <div class="contact-icon wa-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">WhatsApp</span>
+                <span class="contact-val">+91 8630207586</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <div class="contact-card glass-card email-contact-card" id="email-card">
+              <a href="mailto:rohitkandari148@gmail.com" class="contact-card-link" title="Send Email">
+                <div class="contact-icon email-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-type">Email</span>
+                  <span class="contact-val">rohitkandari148@gmail.com</span>
+                </div>
+              </a>
+              <button type="button" class="copy-email-btn" id="copy-email-btn" title="Copy Email to Clipboard" aria-label="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <a href="https://t.me/rohit_kandari_portfolio_bot" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+              <div class="contact-icon tg-icon">
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">Telegram Bot</span>
+                <span class="contact-val">@rohit_kandari_portfolio_bot</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <a href="https://github.com/rohitkandari78" target="_blank" rel="noopener noreferrer" class="contact-card glass-card">
+              <div class="contact-icon gh-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <span class="contact-type">GitHub Profile</span>
+                <span class="contact-val">github.com/rohitkandari78</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+            </a>
+
+            <!-- Telemetry / Live Status Card -->
+            <div class="telemetry-card glass-card">
+              <div class="telemetry-header">
+                <div class="telemetry-badge">
+                  <span class="status-ping"></span>
+                  <span class="status-dot"></span>
+                  <span>Live Visitor Telemetry</span>
+                </div>
+                <span class="telemetry-tag">Telegram Bot Ready</span>
+              </div>
+              <p class="telemetry-info">
+                Whenever a visitor browses this portfolio, an alert is transmitted directly to Rohit's Telegram device.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Interactive Direct Message Form (Sends ping to Telegram!) -->
+          <div class="contact-form-card glass-card">
+            <h3>Send a Direct Note</h3>
+            <p>Your message will be delivered straight to my phone.</p>
+
+            <form id="contact-form" class="direct-form">
+              <div class="form-group">
+                <label for="visitor-name">Your Name</label>
+                <input type="text" id="visitor-name" placeholder="e.g. Rahul Sharma" required />
+              </div>
+
+              <div class="form-group">
+                <label for="visitor-contact">Email / LinkedIn / Phone</label>
+                <input type="text" id="visitor-contact" placeholder="e.g. rahul@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="visitor-message">Message</label>
+                <textarea id="visitor-message" rows="4" placeholder="Hi Rohit, loved your TaskMate project and want to connect..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="send-msg-btn">
+                <i class="fa-regular fa-paper-plane"></i>
+                <span>Send to Rohit</span>
+              </button>
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">Rohit Singh Kandari<span class="brand-dot">.</span></span>
+        <p>Crafting purposeful software with C#, .NET & modern web engineering.</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Rohit Singh Kandari. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast"></div>
+
+  <!-- JavaScript Modules -->
+  <script src="script.js"></script>
+</body>
+
+</html>
