@@ -356,13 +356,13 @@ function setupMobileNav() {
   function openDrawer() {
     drawer.classList.add('active');
     overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowY = 'hidden';
   }
 
   function closeDrawer() {
     drawer.classList.remove('active');
     overlay.classList.remove('active');
-    document.body.style.overflow = '';
+    document.body.style.overflowY = '';
   }
 
   if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
